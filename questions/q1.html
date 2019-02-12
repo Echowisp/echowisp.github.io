@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<script type="text/javascript" src="global_js.js" ></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body onload="reset();">
+<div class="container">
+    <div class="row justify-content-center row1">
+        <h1 class = "head1" id="txtbox">Hi! And welcome to this quiz.</h1>
+    </div>
+    <div class="row justify-content-center align-items-center row2">
+        <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="wrongAnswer()" id="button1">Next</button>
+    </div>
+</div>
+
+</body>
+
+<script>
+var current_num = 0;
+
+function next_question()
+{
+    if (current_num === 0) {
+        document.getElementById("txtbox").innerHTML = "To answer questions, click the appropriate blue button!"
+        document.getElementById("button1").innerHTML = "Ok!"
+        current_num++;
+    } else {
+        location.href = "./questions/#";
+    }
+}
+</script>
+
+</html>
+
+
