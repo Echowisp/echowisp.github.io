@@ -6,43 +6,34 @@
 <script type="text/javascript" src="global.js" ></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body onload="reset();">
+<body >
 <div class="container">
     <div class="row justify-content-center row1">
         <div class="col-md-1">
             <h1>5.</h1>
         </div>
         <div class="col-md-11 text-center">
-            <h1>Myron has 5 apples and eats 2 of them. Mtron now has how many apples?</h1>
+            <h1>Jason has 5 apples, buts 3 more and then eats 2 of them. Jsson now has how many apples?</h1>
         </div>
     </div>
     <div class="row justify-content-center align-items-center row3">
         <div class="col-sm-3">
-            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="wrongAnswer()" id="button1">3</button>
+            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="wrongAnswer()" id="button1">6</button>
         </div>
         <div class="col-sm-3">
-            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="next_question()" id="button1">5</button>
+            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="wrongAnswer()" id="button1">8</button>
         </div>
         <div class="col-sm-3">
-            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="wrongAnswer()" id="button1">3 and 2 apple cores</button>
+            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="wrongAnswer()" id="button1">6 and 2 apple cores</button>
         </div>
         <div class="col-sm-3">
-            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="wrongAnswer()" id="button1">I don't know</button>
+            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="next_question(6)" id="button1">How should I know?</button>
         </div>
     </div>
 </div>
 
 </body>
 
-<script>
-var current_num = 0;
-
-function next_question()
-{
-    rightAnswer();
-    location.href = "./q6.html";
-}
-</script>
 
 </html>
 
