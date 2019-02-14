@@ -10,29 +10,81 @@
 <div class="container">
     <div class="row justify-content-center row1">
         <div class="col-md-1">
-            <h1 onclick="next_question(8)">7.</h1>
+            <h1>8.</h1>
         </div>
         <div class="col-md-11 text-center">
-            <h1>What question number is this.</h1>
+            <h1>Listen to the following audio. What is the answer?</h1>
         </div>
     </div>
-    <div class="row justify-content-center align-items-center row3">
+    <div class="row justify-content-center row1">
+        <audio controls src="./q8.wav" id="thisAudio">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+    </div>
+    <div class="row justify-content-center align-items-center row2">
         <div class="col-sm-3">
-            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="wrongAnswer()" id="button1">6</button>
+            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="toggle1()">Two Freeze Eebs</button>
         </div>
         <div class="col-sm-3">
-            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="wrongAnswer()" id="button1">8</button>
+            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="toggle2()">Two Free Zeebs</button>
         </div>
         <div class="col-sm-3">
-            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="wrongAnswer()" id="button1">5</button>
+            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="toggle3()">Two Threes Eebs</button>
         </div>
         <div class="col-sm-3">
-            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="wrongAnswer()" id="button1">9</button>
+            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="toggle4()">Tooth Receives</button>
+        </div>
+    </div>
+    <div class="row justify-content-center align-items-center" id="finalButton">
+        <div class="col-sm-3">
+            <button type="button" class="btn btn-primary btn-circle btn-xl" onclick="next_question(9)">...All of them?</button>
         </div>
     </div>
 </div>
 
 </body>
+
+<script>
+  var audio = document.getElementById("thisAudio");
+  audio.volume = 0.2;
+  var one = false;
+  var two = false;
+  var three = false;
+  var four = false;
+  var fb = document.getElementById("finalButton");
+  fb.style.display = "none";
+
+  function allClicked() {
+      if (one && two && three && four) {
+          fb.style.display = "";
+      }
+  }
+
+  function toggle1() {
+      one = true;
+      playWrongAnswer();
+      allClicked();
+  }
+
+  function toggle2() {
+      two = true
+      playWrongAnswer();
+      allClicked();
+  }
+
+  function toggle3() {
+      three = true
+      playWrongAnswer();
+      allClicked();
+  }
+
+  function toggle4() {
+      four = true
+      playWrongAnswer();
+      allClicked();
+  }
+</script>
 
 </html>
 
