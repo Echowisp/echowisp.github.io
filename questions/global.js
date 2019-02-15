@@ -51,6 +51,7 @@ function playWrongAnswer() {
 
 function wrongAnswer() {
     new_val = parseInt(readCookie('num_wrongs')) + 1;
+    console.log(new_val);
     eraseCookie('num_wrongs');
     createCookie('num_wrongs', new_val, 1);
     playWrongAnswer();
