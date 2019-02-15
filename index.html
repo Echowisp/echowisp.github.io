@@ -22,7 +22,7 @@
 function next_question()
 {
      location.href = "./questions/intro.html";
-     document.cookie = "num_wrongs=0";
+     createCookie('num_wrongs', 0, 1);
 }
 </script>
 
