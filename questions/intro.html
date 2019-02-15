@@ -30,6 +30,7 @@ function next_question_sp()
     } else {
         rightAnswer();
         location.href = "./q1.html";
+        document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
         document.cookie = "num_wrongs=0";
     }
 }
