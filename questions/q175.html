@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<script type="text/javascript" src="global.js" ></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body >
+<div class="container">
+    <div class="row justify-content-center row1">
+        <div class="imgbox">
+            <img src="./cow.jpg" id = 'image' class="center-fit">
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript">
+async function next() {
+    var image = document.getElementById("image")
+    await sleep(250);
+    image.src = "./rock.jpg";
+    await sleep(250);
+    image.src = "./sil.jpg";
+    await sleep(250);
+    location.href = "./q17.html"
+}
+next();
+
+</script>
+
+</html>
+
+

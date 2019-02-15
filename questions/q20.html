@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<script type="text/javascript" src="global.js" ></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body >
+<div class="container">
+    <div class="row justify-content-center row1">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-11 text-center">
+            <h1>
+                Congrats on finishing the quiz!
+            </h1>
+        </div>
+    </div>
+    <div class="row justify-content-center row1">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-11 text-center">
+            <h1>
+                You made
+            </h1>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-11 text-center">
+            <h1 id="number"></h1>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-11 text-center">
+            <h1>
+                mistakes
+            </h1>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    document.getElementById("number").innerHTML = decodeURIComponent(document.cookie).split('=')[1];
+</script>
+
+</html>
+
+
