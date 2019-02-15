@@ -13,8 +13,9 @@ function playWrongAnswer() {
 function wrongAnswer() {
     var decodedCookie = decodeURIComponent(document.cookie);
     var old_value = decodedCookie.split('=')[1];
+    var new_value = old_value + 1;
     playWrongAnswer();
-    document.cookie = "num_wrongs=" + (old_value + 1);
+    document.cookie = "num_wrongs=" + new_value;
 }
 
 async function sleep(ms) {
