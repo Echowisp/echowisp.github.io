@@ -50,7 +50,7 @@ function playWrongAnswer() {
 }
 
 function wrongAnswer() {
-    new_val = readCookie('num_wrongs') + 1;
+    new_val = parseInt(readCookie('num_wrongs')) + 1;
     eraseCookie('num_wrongs');
     createCookie('num_wrongs', new_val, 1);
     playWrongAnswer();
