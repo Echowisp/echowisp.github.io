@@ -5,6 +5,7 @@ body {
   background-position: center;
   background-repeat: repeat;
   background-size: 100%;
+  background-attachment: fixed;
 }
 
 .row1 {
@@ -29,6 +30,16 @@ body {
     padding: 30px 48px;
     border-radius: 105px;
     font-size: 24px;
+    line-height: 1.33;
+    white-space: normal;
+}
+
+.btn-circle.btn-m {
+    width: 105px;
+    height: 105px;
+    padding: 15px 24px;
+    border-radius: 52px;
+    font-size: 15px;
     line-height: 1.33;
     white-space: normal;
 }
